@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        li:hover {
+            background-color: #f0f0f0;
+        }
+
+        select {
+            width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+        }
+
+        option {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dropdown Example</h1>
+
+    <h2>Dropdown using Select Tag</h2>
+    <select data-cy="dropdown-select">
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Orange">Orange</option>
+        <option value="Kiwi">Kiwi</option>
+        <option value="Grapes">Grapes</option>
+    </select>
+    <h2>Dropdown with Duplicate Values</h2>
+    <select data-cy="dropdown-select-duplicates">
+        <option value="Rose">Rose</option>
+        <option value="Tulip">Tulip</option>
+        <option value="Rose">Rose</option>
+        <option value="Daisy">Daisy</option>
+        <option value="Tulip">Tulip</option>
+    </select>
+</body>
+
+</html>
